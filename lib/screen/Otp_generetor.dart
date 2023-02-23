@@ -64,9 +64,11 @@ class _OtpState extends State<Otp> {
                 String number = length.text;
                 int a = int.parse(number);
                 setState(() {
+                  List y=[];
                   for (int i = 0; i < a; i++) {
                     Random custom = Random();
-                    x.add(custom.nextInt(10));
+                    y.add(custom.nextInt(10));
+                    x=y;
                   }
                 });
               },
